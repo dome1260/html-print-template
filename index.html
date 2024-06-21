@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title> Print Template </title>
+</head>
+<body>
+  <div class="container">
+    <section class="header__section">
+      <button onclick="print()">
+        พิมพ์
+      </button>
+    </section>
+    <section class="print__page print__page--landscape">
+      <div
+        style="margin-bottom: 16px;"
+        class="print__card">
+        <table class="section-1">
+          <tbody>
+            <tr>
+              <td
+                style="width: 500px; padding: 16px;"
+                class="text-center">
+                <div style="margin-bottom: 16px;">
+                  Good Application (สำนักงานใหญ่)
+                </div>
+                <div style="margin-bottom: 16px;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nam.
+                </div>
+                <div>
+                  เลขประจำตัวผู้เสียภาษีอากร 2521200020707
+                </div>
+              </td>
+              <td
+                style="padding: 16px;"
+                class="text-center">
+                บิลเงินสด/ใบกำกับภาษี
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="section-2">
+          <tbody>
+            <tr>
+              <td style="width: 50px;">
+                ลูกค้า
+              </td>
+              <td style="width: 450px;">
+                โรงเรียนห้างฉัตรวิทยา
+              </td>
+              <td
+                style="width: 50px;"
+                class="border-l border-r">
+                เลขที่
+              </td>
+              <td
+                style="width: 175.5px;"
+                class="text-center">
+                GCS670100002
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50px;">
+                ที่อยู่
+              </td>
+              <td style="width: 450px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos voluptatibus explicabo minima autem ipsum?
+              </td>
+              <td
+                style="width: 50px;"
+                class="border-l border-r">
+                วันที่
+              </td>
+              <td
+                style="width: 177.5px;"
+                class="text-center">
+                10/01/2567
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50px;">
+              </td>
+              <td style="width: 450px;">
+                -
+              </td>
+              <td
+                style="width: 50px;"
+                class="border-l border-r border-b">
+              </td>
+              <td
+                style="width: 177.5px;"
+                class="text-center border-b">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="section-3">
+          <tbody>
+            <tr>
+              <td style="width: 120px;">
+                เลขผู้เสียภาษี
+              </td>
+              <td style="width: 450px;">
+                09940000442581
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="section-4">
+          <thead>
+            <tr>
+              <th
+                style="width: 50px;"
+                class="border-t border-r border-b">
+                ที่
+              </th>
+              <th class="border-t border-r border-b">
+                รายการ
+              </th>
+              <th
+                style="width: 100px;"
+                class="border-t border-r border-b">
+                จำนวน
+              </th>
+              <th
+                style="width: 120px;"
+                class="border-t border-r border-b">
+                ราคาต่อหน่วย
+              </th>
+              <th
+                style="width: 120px;"
+                class="border-t border-b">
+                จำนวนเงิน
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center border-r">
+                1
+              </td>
+              <td class="border-r">
+                LPG บรรจุ 15 กก วาล์วมือหมุน
+              </td>
+              <td class="text-center border-r">
+                1
+              </td>
+              <td class="text-right border-r">
+                465.00
+              </td>
+              <td class="text-right">
+                465.00
+              </td>
+            </tr>
+            <tr class="row-empty">
+              <td class="border-b border-r">
+              </td>
+              <td class="border-b border-r">
+              </td>
+              <td class="border-b border-r">
+              </td>
+              <td class="border-b border-r">
+              </td>
+              <td class="border-b">
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td
+                colspan="2"
+                class="text-center border-b border-r">
+                (สี่ร้อยหกสิบห้าบาทถ้วน)
+              </td>
+              <td
+                colspan="2"
+                class="text-center border-b border-r">
+                มูลค่าสินค้า
+              </td>
+              <td class="text-right border-b">
+                434.58
+              </td>
+            </tr>
+            <tr>
+              <td
+                colspan="2"
+                rowspan="2"
+                class="border-r">
+                หมายเหตุ ชำระด้วยเงินสด
+              </td>
+              <td
+                colspan="2"
+                class="text-center border-b border-r">
+                ภาษีมูลค่าเพิ่ม
+              </td>
+              <td class="text-right border-b">
+                30.42
+              </td>
+            </tr>
+            <tr>
+              <td
+                colspan="2"
+                class="text-center border-r">
+                รวมทั้งสิ้น
+              </td>
+              <td class="text-right">
+                465.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="print__card">
+        <table class="section-5">
+          <tbody>
+            <tr>
+              <td
+                style="width: 40%;"
+                class="border-r">
+                ผู้จ่ายเงิน
+              </td>
+              <td style="width: 60%;">
+                ผู้รับเงิน
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  background-color: red;
+}
+
+.container {
+  padding: 16px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header__section button {
+  padding: 4px 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.border-t {
+  border-top: 1px solid black;
+}
+
+.border-l {
+  border-left: 1px solid black;
+}
+
+.border-r {
+  border-right: 1px solid black;
+}
+
+.border-b {
+  border-bottom: 1px solid black;
+}
+
+/*  */
+
+.print__page {
+  width: 210mm;
+  height: 297mm;
+  padding: 32px;
+  margin: 0 auto;
+  box-shadow: 2px 0px 18px 0px rgba(0,0,0,0.75);
+}
+
+/* .print__page.print__page--landscape {
+  width: 297mm;
+  height: 210mm;
+} */
+
+table {
+  border-collapse: collapse;
+}
+
+table tbody tr td,
+table thead tr th,
+table tfoot tr td {
+  padding: 4px;
+}
+
+.print__card {
+  border: 1px solid black;
+}
+
+table.section-1 {
+  width: 100%;
+}
+
+table.section-1 tr td {
+  border-bottom: 1px solid black;
+}
+
+table.section-1 tr td:first-child {
+  border-right: 1px solid black;
+}
+
+table.section-2 {
+  width: 100%;
+}
+
+table.section-2 tbody tr td {
+  vertical-align: top;
+}
+
+table.section-3 {
+  width: 100%;
+}
+
+.table-section-4__card {
+  width: 100%;
+  min-height: 200px;
+  border-bottom: 1px solid black;
+}
+
+table.section-4 {
+  width: 100%;
+}
+
+table.section-4 thead tr th {
+  font-weight: 400;
+}
+
+table.section-4 tbody tr td {
+  vertical-align: top;
+}
+
+table.section-4 tfoot tr td {
+  vertical-align: top;
+}
+
+table.section-5 {
+  width: 100%;
+  min-height: 100px;
+}
+
+table.section-5 tbody tr td {
+  vertical-align: top;
+}
+
+.row-empty {
+  height: 150px;
+}
+
+@media print {
+  @page {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__section {
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .print__page {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  /* .print__page.print__page--landscape {
+    transform: rotate(270deg) translate(-297mm, 0);
+    transform-origin: 0 0;
+  } */
+}
